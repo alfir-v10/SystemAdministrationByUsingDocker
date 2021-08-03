@@ -1,22 +1,13 @@
 FROM debian:buster
 
-ARG MYSQL_PASSWORD="defaultpass"
-ARG MYSQL_ROOT_PASSWORD="defaultpass"
+RUN apt-get update && apt-get install -y mariadb-server
 
-ENV MYSQL_PASSWORD=${MYSQL_PASSWORD}
-ENV MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+COPY ./conf/50-server.cnf /etc/mysql/mariadb.conf.d/
+COPY ./tools/setup_db.sh      /var/www/
 
-RUN echo $MYSQL_PASSWORD
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get install mariadb-server mariadb-client php-mysql -y
+RUN chmod 444 /etc/mysql/mariadb.conf.d/50-server.cnf
+RUN chmod 755 /var/www/setup_db.sh 
 
-COPY ./tools/db_pre.sql /var/www/
-COPY ./tools/db_init.sh	/var/www/
-
-RUN chmod +x /var/www/db_init.sh
-RUN /var/www/db_init.sh
 
 EXPOSE 3306
-
-ENTRYPOINT ["/usr/bin/mysqld_safe", "--bind-address=0.0.0.0"]
+ENTRYPOINT ["bash", "/var/www/setup_db.sh"]
