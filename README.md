@@ -60,3 +60,6 @@ On Linux systems, first install the Docker Engine for your OS as described on th
 *   [Docker самый простой и понятный туториал. Изучаем докер, так, если бы он был игровой приставкой](https://badcode.ru/docker-tutorial-dlia-novichkov-rassmatrivaiem-docker-tak-iesli-by-on-byl-ighrovoi-pristavkoi/)
 *   [Docker и docker-compose для начинающих. Докеризуем интернет-магазин](https://webdevkin.ru/posts/raznoe/docker)
 *   [Nginx. Руководство для начинающих](https://nginx.org/ru/docs/beginners_guide.html)
+*   [20 команд MySQL (mysqladmin) для администратора базы данных в Linux](https://zalinux.ru/?p=793)
+*   [Linux Administration (github page)](https://github.com/hightemp/docLinux)
+*   [50-server.cnf](https://exampleconfig.com/view/mariadb-ubuntu18-04-etc-mysql-mariadb-conf-d-50-server-cnf)
