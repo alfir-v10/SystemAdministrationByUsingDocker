@@ -59,4 +59,4 @@ On Linux systems, first install the Docker Engine for your OS as described on th
 *   [Установка LEMP с помощью Docker'а](https://totaku.ru/ustanovka-lemp-s-pomoshchiu-dockera/)
 *   [Docker самый простой и понятный туториал. Изучаем докер, так, если бы он был игровой приставкой](https://badcode.ru/docker-tutorial-dlia-novichkov-rassmatrivaiem-docker-tak-iesli-by-on-byl-ighrovoi-pristavkoi/)
 *   [Docker и docker-compose для начинающих. Докеризуем интернет-магазин](https://webdevkin.ru/posts/raznoe/docker)
-    
+*   [Nginx. Руководство для начинающих](https://nginx.org/ru/docs/beginners_guide.html)
