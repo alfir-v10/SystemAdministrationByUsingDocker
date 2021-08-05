@@ -54,5 +54,9 @@ On Linux systems, first install the Docker Engine for your OS as described on th
   $ docker-compose --version
 ```
 
-[YAML Tutorial: Get Started With YAML in 5 Minutes](https://betterprogramming.pub/yaml-tutorial-get-started-with-yaml-in-5-minutes-549d462972d8)
-
+## Useful references
+*   [YAML Tutorial: Get Started With YAML in 5 Minutes](https://betterprogramming.pub/yaml-tutorial-get-started-with-yaml-in-5-minutes-549d462972d8)
+*   [Установка LEMP с помощью Docker'а](https://totaku.ru/ustanovka-lemp-s-pomoshchiu-dockera/)
+*   [Docker самый простой и понятный туториал. Изучаем докер, так, если бы он был игровой приставкой](https://badcode.ru/docker-tutorial-dlia-novichkov-rassmatrivaiem-docker-tak-iesli-by-on-byl-ighrovoi-pristavkoi/)
+*   [Docker и docker-compose для начинающих. Докеризуем интернет-магазин](https://webdevkin.ru/posts/raznoe/docker)
+    
