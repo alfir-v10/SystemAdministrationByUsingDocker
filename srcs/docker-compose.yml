@@ -9,7 +9,7 @@ services:
   volumes:
    - db:/var/lib/mysql
   networks:
-    - inception-network
+    - docker-net
   env_file: .env
   restart: always
 
@@ -22,7 +22,7 @@ services:
    - wp:/var/www/html
 
   networks:
-    - inception-network
+    - docker-net
   env_file: .env
   restart: always
   depends_on:
@@ -37,7 +37,7 @@ services:
    - wp:/var/www/html
   build: ./requirements/wordpress/
   networks:
-    - inception-network
+    - docker-net
   env_file: .env
   restart: always
   depends_on:
@@ -61,6 +61,6 @@ volumes:
       device: /home/btwee/data/db
 
 networks:
-  inception-network:
-    name: inception-network
+  docker-net:
+    name: docker-net
     driver: bridge
