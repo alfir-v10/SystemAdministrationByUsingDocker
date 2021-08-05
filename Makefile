@@ -11,6 +11,10 @@ stop:
 	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) stop
 ps:
 	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) ps
+restart:
+	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) restart
+logs:
+	$(DOCKER_COMPOSE) -f $(DOCKER_COMPOSE_FILE) logs
 clean:
 	docker stop $$(docker ps -qa);\
 	docker rm $$(docker ps -qa);\
@@ -24,4 +28,4 @@ required:
 	echo '127.0.0.1 btwee.42.fr' >> /etc/hosts 
 	echo '127.0.0.1 www.btwee.42.fr' >> /etc/hosts
 
-.PHONY: up down stop
+.PHONY: up down stop rebuild restart clean required logs
